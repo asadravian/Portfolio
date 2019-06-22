@@ -46,9 +46,16 @@ class _HomePageState extends State<HomePage> {
               color: Colors.redAccent,
             ),
             child: FlatButton(
-              onPressed: () async {},
+              onPressed: () async {
+                html.window.open(
+                    'https://drive.google.com/open?id=1WtZgVpHNILDY2eZgoklihuXPhj7HFcF_',
+                    'resume');
+              },
               child: Text('   Résumé   ',
-                  style: TextStyle(color: Colors.white, fontSize: 20.0,fontFamily: 'Comfortaa')),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      fontFamily: 'Comfortaa')),
             ),
           ),
         ),
@@ -71,7 +78,10 @@ class _HomePageState extends State<HomePage> {
                     curve: Curves.easeIn);
               },
               child: Text('   Say hi!   ',
-                  style: TextStyle(color: Colors.white, fontSize: 20.0,fontFamily: 'Comfortaa')),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      fontFamily: 'Comfortaa')),
             ),
           ),
         ),
