@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Ibtesam | Portfolio',
       routes: <String, WidgetBuilder>{
         '/': (BuildContext contex) => MainPage(),
       },
